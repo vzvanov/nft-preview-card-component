@@ -225,19 +225,54 @@ footer {
   color: var(--color-soft-blue);
 }
 
-.pixel-perfect-image {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  z-index: 100;
-}
-
 /* https://bootstrap-4.ru/docs/5.2/layout/breakpoints/ */
 
 /* Small */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .card {
+    min-width: 22rem;
+    margin: 9.5rem 0 0 0;
+  }
+
+  .container {
+    min-width: 19rem;
+  }
+
+  .card__img {
+    margin-top: 1.5rem;
+    border-radius: 1.0rem;
+    padding: 0 0 19rem 0;
+    margin-bottom: 1.4rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .card__info {
+    font-size: 1.15rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .card__rate {
+    margin-bottom: 1.2rem;
+  }
+
+  .card__rate-data {
+    margin-right: 0.4rem;
+    line-height: 1.9rem;
+  }
+
+  .card__creation {
+    margin-bottom: 2rem;
+  }
+
+  .card__creation p {
+    font-size: 1.05rem;
+  }
+
+
+}
 
 /* Medium */
 @media (min-width: 768px) {}
